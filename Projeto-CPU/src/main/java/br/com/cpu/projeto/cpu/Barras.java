@@ -288,17 +288,17 @@ public class Barras extends javax.swing.JFrame {
         }else{
             if(minimodisco > CPU){
                 minimodisco = CPU;
-                jVminimo2.setText(String.format("%d",minimodisco));
+                jVminimo2.setText(String.format("%d GB",minimodisco));
             }
         }
         // medio disco
         mediodisco += Disco; 
         Integer CalMediaDisco = mediodisco / contador;
-        jVmedio2.setText(String.format("%d",CalMediaDisco));
+        jVmedio2.setText(String.format("%d GB",CalMediaDisco));
         //maximo disco
         if(maximodisco < Disco){
             maximodisco = Disco;
-            jVmaximo2.setText(String.format("%d",maximodisco));
+            jVmaximo2.setText(String.format("%d GB",maximodisco));
         }
         // Memoria
         Random aleatorioMem = new Random();
@@ -310,11 +310,11 @@ public class Barras extends javax.swing.JFrame {
         // minimo memoria
         if(minimoMem == 0){
             minimoMem = Memoria;
-            jVminimo3.setText(String.format("%d",minimoMem));
+            jVminimo3.setText(String.format("%d MB",minimoMem));
         }else{
             if(minimoMem > Memoria){
                 minimoMem = Memoria;
-                jVminimo3.setText(String.format("%d",minimoMem));
+                jVminimo3.setText(String.format("%d MB",minimoMem));
             }
         }
         //medio memoria
