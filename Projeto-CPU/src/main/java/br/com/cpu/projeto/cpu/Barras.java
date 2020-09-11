@@ -284,7 +284,7 @@ public class Barras extends javax.swing.JFrame {
         
         if(minimodisco == 0){
             minimodisco = Disco;
-            jVminimo2.setText(String.format("%d",minimodisco));
+            jVminimo2.setText(String.format("%d GB",minimodisco));
         }else{
             if(minimodisco > CPU){
                 minimodisco = CPU;
@@ -320,11 +320,11 @@ public class Barras extends javax.swing.JFrame {
         //medio memoria
         medioMem += Memoria; 
         Integer CalMediaMem = medioMem / contador;
-        jVmedio3.setText(String.format("%d",CalMediaMem));
+        jVmedio3.setText(String.format("%d MB",CalMediaMem));
         //maximo memoria
         if(maximoMem < Memoria){
             maximoMem = Memoria;
-            jVmaximo3.setText(String.format("%d",maximoMem));
+            jVmaximo3.setText(String.format("%d MB",maximoMem));
         }
         
     }//GEN-LAST:event_btnacao1ActionPerformed
